@@ -1,8 +1,8 @@
 # Logitech unifying receiver VID/PID modification
 
-This is a guide on how to manually change the VID/PID for Logitech unifying receiver. I did this because I wanted to passthrough one of my Logitech keyboards to a virtual machine, however I have two Logitech unifying receivers connected to the host machine with identical VID/PIDs, so it's a bit tricky to edit my VM config to passthrough the one I want. Changing the PID of one of the dongles was the solution.
+This is a guide on how to manually change the VID/PID (046d:c52c) for Logitech unifying receiver. I did this because I wanted to passthrough one of my Logitech keyboards to a virtual machine, however I have two Logitech unifying receivers connected to the host machine with identical VID/PIDs, so it's a bit tricky to edit my VM config to passthrough the one I want. Changing the PID of one of the dongles was the solution.
 
-Note this is carried out on the Nordic nRF24LU1-based receiver C-U0007 (firmware version RQR12.0X). There is a newer version of the unifying receiver based in TI chip (C-U0008 and firmware RQR24) which I don't know if will work, but maybe the same principle will apply.
+Note this is carried out on the Nordic nRF24LU1-based receiver C-U0007 (firmware version RQR12.0X). There is a newer version of the unifying receiver based on TI chip (C-U0008 and firmware RQR24) which I don't know if will work, but maybe the same principle will apply.
 
 # Some useful resources
 - fwupd
