@@ -19,7 +19,7 @@ Here is a sequence of commands to run to carry out the procedure:
 - Download the official firmware
 `git clone https://github.com/Logitech/fw_updates.git`
 - `cd fw_updates/RQR12/RQR12.08`
-- Search for C52B abd 2BC5 in RQR12.08_B0030.hex and change it. Fix the line checksum per Intel Hex file format
+- Search for C52B and 2BC5 in RQR12.08_B0030.hex and change it. Per [https://github.com/pwr-Solaar/Solaar/issues/491#issuecomment-589693202], it's recommended to change c52b to c532 or c517 to c526 in order to ensure maximum compatibility if you want to use Solaar in Linux. If you just want a generic mouse/keyboard, then any PID would do. Fix the line checksum per Intel Hex file format
 - Generate a binary firmware, note the fill bytes 0xFF, otherwise the CRC computation will be wrong. 
 `avr-objcopy --gap-fill=0xff -I ihex -O binary RQR12.08_B0030.hex RQR12.08_B0030.bin`
 - Compute the checksum
